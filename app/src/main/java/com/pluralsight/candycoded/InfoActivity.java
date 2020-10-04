@@ -9,6 +9,8 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
+import java.net.URI;
+
 public class InfoActivity extends AppCompatActivity {
 
 
@@ -40,12 +42,16 @@ public class InfoActivity extends AppCompatActivity {
     }
 
 
+    // *** close to launch google maps activity + in textview xml we added android:cliackable true and android:onclick create map intent
 
+    // *** task 3 to Launch phone Activity
 
-    //
-    // ***
+    public void createPhoneIntent(View view){
+         Intent phoneIntent = new Intent(android.content.Intent.ACTION_DIAL);
+         phoneIntent.setData(Uri.parse("tel:0123456789"));
+         startActivity(phoneIntent);
 
-    // ***
-    // TODO - Task 3 - Launch the Phone Activity
+    }
+
     // ***
 }
