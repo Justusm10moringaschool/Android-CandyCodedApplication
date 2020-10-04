@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Task 1 - Show Store Information Activity
-    
+
    // implemetation of launching an intent of InfoActivity
 
     @Override
